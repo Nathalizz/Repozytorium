@@ -1,6 +1,6 @@
 body {
     padding-left: 0px;
-   background-image: url(tlo.jpg);
+   background-image: url(dwa.jpg);
    background-repeat: no-repeat;
 
 }
@@ -36,6 +36,11 @@ h1, h2, h3, h4 {
 .date {
     float: right;
     color: #ff0000;
+}
+
+.text {
+    color: #ff0000;
+
 }
 
 .save {
