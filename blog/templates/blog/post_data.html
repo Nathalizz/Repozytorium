@@ -8,16 +8,20 @@
         <link rel="stylesheet" href="{% static 'blog.css' %}">
     </head>
     <body>
+      <div>
+        <center>
+          <h1>
+            <p style="color: #ff0000">Ej czego sie tu spodziewasz, to tylko data publikacji!</p>
+          </h1>
+        </center>
 
-
-                        <div>
-                        <center>    <h1><p style="color: #ff0000">Ej czego sie tu spodziewasz, to tylko data publikacji!</p></h1></center>
-
-            <div>
-          <center>    <img src= "swinka.gif" width="500" height="400"> <center>
-          </div>
-                        </div>
-
+        <div>
+          <center>
+            <img src= "{{ STATIC_ROOT }}/static/swinka.gif" width="500" height="400">
+          <center>
+        </div>
+      
+      </div>
 
 
     </body>
