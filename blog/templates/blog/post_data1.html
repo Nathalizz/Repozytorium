@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Czyste szaleństwo</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'blog.css' %}">
+    </head>
+    <body>
+      {% block content %}
+                    {% for post in klucz %}
+                        <div class="post">
+                            <div class="date">
+                                {{ post.published_date }}
+                            </div>
+                            <h1><a href="{% url 'post_data' pk=post.pk %}">{{ post.published_date }}</a></h1>
+                            <p>Ej czego sie tu spodziewasz</p>
+                        </div>
+                    {% endfor %}
+      {% endblock content %}
+
+
+    </body>
+  </html>

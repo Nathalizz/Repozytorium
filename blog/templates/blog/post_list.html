@@ -4,9 +4,10 @@
               {% for post in klucz %}
                   <div class="post">
                       <div class="date">
-                          {{ post.published_date }}
+                        <a href="{% url 'post_data' %}">{{ post.published_date }}</a>
                       </div>
                       <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+
                       <p style="color: #000000">{{ post.text|linebreaksbr }}</p>
                   </div>
               {% endfor %}
