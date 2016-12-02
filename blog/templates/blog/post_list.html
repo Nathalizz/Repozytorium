@@ -1,14 +1,27 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-              {% for post in klucz %}
-                  <div class="post">
-                      <div class="date">
-                        <a href="{% url 'post_data' %}">{{ post.published_date }}</a>
-                      </div>
-                      <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+<div>
+  <center>
+    <h1>
+      <p style="color: #006400">Kochana Ewelinko!</p>
+    </h1>
+    <h1>
+      <p style="color: #ff0000">Wszystkiego najlepszego z okazji urodzin :D</p></br>
+    </h1>
+  </center>
+</div>
+  <div>
+    <center>
+      <img src= "{{ STATIC_ROOT }}/static/bukiet.gif" width="500" height="400">
+    <center>
+  </div>
+<div>
+  <center>
+  <h1>
+    <p style="color: #006400">Spełnienia marzeń i wielu radości kazdego dnia! </p>
+  </h1>
+</center>
+</div>
 
-                      <p style="color: #000000">{{ post.text|linebreaksbr }}</p>
-                  </div>
-              {% endfor %}
-{% endblock content %}
+    {% endblock content %}
